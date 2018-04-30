@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 A Node JS View
+    p This is #{email}
+    form(method='post' action='/')
+        //input#message(type='text', placeholder='message' name='message')
+        input#email(type='text', placeholder='email' name='email')
+        button(type='submit') Submit
+
